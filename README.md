@@ -50,6 +50,14 @@ CREATE TABLE personajes (
    email NVARCHAR(100)
 );
 GO
+
+CREATE TABLE personajes (
+   id INT PRIMARY KEY,
+   name NVARCHAR(50),
+   email NVARCHAR(100),
+   whatsapp CHAR(10)
+);
+GO
 ```
 
 ### Agregar un usuario ejemplo (la contraseña es 'luke')
@@ -65,6 +73,12 @@ INSERT INTO personajes (id, name, email) VALUES
 (1, 'Mark Grayson', 'mark@gmail.com'),
 (2, 'Allen the Alien', 'allen@gmail.com'),
 (3, 'Atom Eve', 'eve@gmail.com');
+GO
+
+INSERT INTO personajes (id, name, email, whatsapp) VALUES
+(1, 'Mark Grayson', 'mark@gmail.com', '1234567890'),
+(2, 'Allen the Alien', 'allen@gmail.com', '2222222222'),
+(3, 'Atom Eve', 'eve@gmail.com', '3333333333');
 GO
 ```
 
